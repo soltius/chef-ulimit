@@ -47,7 +47,31 @@ class Chef
             stack_hard_limit: new_resource.stack_hard_limit,
             rtprio_limit: new_resource.rtprio_limit,
             rtprio_soft_limit: new_resource.rtprio_soft_limit,
-            rtprio_hard_limit: new_resource.rtprio_hard_limit
+            rtprio_hard_limit: new_resource.rtprio_hard_limit,
+            data_limit: new_resource.data_limit,
+            data_soft_limit: new_resource.data_soft_limit,
+            data_hard_limit: new_resource.data_hard_limit,
+            priority_limit: new_resource.priority_limit,
+            priority_soft_limit: new_resource.priority_soft_limit,
+            priority_hard_limit: new_resource.priority_hard_limit,
+            fsize_limit: new_resource.fsize_limit,
+            fsize_soft_limit: new_resource.fsize_soft_limit,
+            fsize_hard_limit: new_resource.fsize_hard_limit,
+            sigpending_limit: new_resource.sigpending_limit,
+            sigpending_soft_limit: new_resource.sigpending_soft_limit,
+            sigpending_hard_limit: new_resource.sigpending_hard_limit,
+            memlock_limit: new_resource.memlock_limit,
+            memlock_soft_limit: new_resource.memlock_soft_limit,
+            memlock_hard_limit: new_resource.memlock_hard_limit,
+            msgqueue_limit: new_resource.msgqueue_limit,
+            msgqueue_soft_limit: new_resource.msgqueue_soft_limit,
+            msgqueue_hard_limit: new_resource.msgqueue_hard_limit,
+            cpu_limit: new_resource.cpu_limit,
+            cpu_soft_limit: new_resource.cpu_soft_limit,
+            cpu_hard_limit: new_resource.cpu_hard_limit,
+            locks_limit: new_resource.locks_limit,
+            locks_soft_limit: new_resource.locks_soft_limit,
+            locks_hard_limit: new_resource.locks_hard_limit
           )
         end
       end

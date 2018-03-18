@@ -18,7 +18,7 @@
 
 <% unless @core_limit.nil? -%>
 <%= @ulimit_user -%> - core <%= @core_limit %>
-<% else -%><% unless @core_soft_limit.nil? -%><%= @ulimit_user -%> soft core <%= @core_soft_limit %><% end -%>
+<% else -%><% unless @core_soft_limit.nil? -%><%= @ulimit_user <%  %>%> soft core <%= @core_soft_limit %><% end -%>
 <% unless @core_hard_limit.nil? -%><%= @ulimit_user -%> hard core <%= @core_hard_limit %><% end -%>
 <% end -%>
 
@@ -32,4 +32,64 @@
 <%= @ulimit_user -%> - rtprio <%= @rtprio_limit %>
 <% else -%><% unless @rtprio_soft_limit.nil? -%><%= @ulimit_user -%> soft rtprio <%= @rtprio_soft_limit %><% end -%>
 <% unless @rtprio_hard_limit.nil? -%><%= @ulimit_user -%> hard rtprio <%= @rtprio_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @rtprio_limit.nil? -%>
+<%= @ulimit_user -%> - rtprio <%= @rtprio_limit %>
+<% else -%><% unless @rtprio_soft_limit.nil? -%><%= @ulimit_user -%> soft rtprio <%= @rtprio_soft_limit %><% end -%>
+<% unless @rtprio_hard_limit.nil? -%><%= @ulimit_user -%> hard rtprio <%= @rtprio_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @rtprio_limit.nil? -%>
+<%= @ulimit_user -%> - rtprio <%= @rtprio_limit %>
+<% else -%><% unless @rtprio_soft_limit.nil? -%><%= @ulimit_user -%> soft rtprio <%= @rtprio_soft_limit %><% end -%>
+<% unless @rtprio_hard_limit.nil? -%><%= @ulimit_user -%> hard rtprio <%= @rtprio_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @data_limit.nil? -%>
+<%= @ulimit_user -%> - data <%= @data_limit %>
+<% else -%><% unless @data_soft_limit.nil? -%><%= @ulimit_user -%> soft data <%= @data_soft_limit %><% end -%>
+<% unless @data_hard_limit.nil? -%><%= @ulimit_user -%> hard data <%= @data_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @priority_limit.nil? -%>
+<%= @ulimit_user -%> - priority <%= @priority_limit %>
+<% else -%><% unless @priority_soft_limit.nil? -%><%= @ulimit_user -%> soft priority <%= @priority_soft_limit %><% end -%>
+<% unless @priority_hard_limit.nil? -%><%= @ulimit_user -%> hard priority <%= @priority_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @fsize_limit.nil? -%>
+<%= @ulimit_user -%> - fsize <%= @fsize_limit %>
+<% else -%><% unless @fsize_soft_limit.nil? -%><%= @ulimit_user -%> soft fsize <%= @fsize_soft_limit %><% end -%>
+<% unless @fsize_hard_limit.nil? -%><%= @ulimit_user -%> hard fsize <%= @fsize_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @sigpending_limit.nil? -%>
+<%= @ulimit_user -%> - sigpending <%= @sigpending_limit %>
+<% else -%><% unless @sigpending_soft_limit.nil? -%><%= @ulimit_user -%> soft sigpending <%= @sigpending_soft_limit %><% end -%>
+<% unless @sigpending_hard_limit.nil? -%><%= @ulimit_user -%> hard sigpending <%= @sigpending_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @memlock_limit.nil? -%>
+<%= @ulimit_user -%> - memlock <%= @memlock_limit %>
+<% else -%><% unless @memlock_soft_limit.nil? -%><%= @ulimit_user -%> soft memlock <%= @memlock_soft_limit %><% end -%>
+<% unless @memlock_hard_limit.nil? -%><%= @ulimit_user -%> hard memlock <%= @memlock_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @msgqueue_limit.nil? -%>
+<%= @ulimit_user -%> - msgqueue <%= @msgqueue_limit %>
+<% else -%><% unless @msgqueue_soft_limit.nil? -%><%= @ulimit_user -%> soft msgqueue <%= @msgqueue_soft_limit %><% end -%>
+<% unless @msgqueue_hard_limit.nil? -%><%= @ulimit_user -%> hard msgqueue <%= @msgqueue_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @cpu_limit.nil? -%>
+<%= @ulimit_user -%> - cpu <%= @cpu_limit %>
+<% else -%><% unless @cpu_soft_limit.nil? -%><%= @ulimit_user -%> soft cpu <%= @cpu_soft_limit %><% end -%>
+<% unless @cpu_hard_limit.nil? -%><%= @ulimit_user -%> hard cpu <%= @cpu_hard_limit %><% end -%>
+<% end -%>
+
+<% unless @locks_limit.nil? -%>
+<%= @ulimit_user -%> - locks <%= @locks_limit %>
+<% else -%><% unless @locks_soft_limit.nil? -%><%= @ulimit_user -%> soft locks <%= @locks_soft_limit %><% end -%>
+<% unless @locks_hard_limit.nil? -%><%= @ulimit_user -%> hard locks <%= @locks_hard_limit %><% end -%>
 <% end -%>
